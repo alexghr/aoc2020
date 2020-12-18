@@ -14,6 +14,7 @@ fn run_day3() {
     let data = read_lines("data/day3.txt");
     println!("======== Day 3 ========");
     println!("Part 1: {}", day3::count_trees_knight_move(&data));
+    println!("Part 2: {}", day3::check_slopes(&data));
     println!("");
 }
 
