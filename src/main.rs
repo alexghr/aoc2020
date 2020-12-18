@@ -12,7 +12,8 @@ fn main() {
 fn run_day2() {
     let data = read_lines("data/day2.txt");
     println!("======== Day2 ========");
-    println!("Part 1: {}", day2::count_passwords(&data));
+    println!("Part 1: {}", day2::count_sled_passwords(&data));
+    println!("Part 2: {}", day2::count_toboggan_passwords(&data));
     println!("");
 }
 
