@@ -7,11 +7,19 @@ use aoc2020::*;
 fn main() {
     run_day1();
     run_day2();
+    run_day3();
+}
+
+fn run_day3() {
+    let data = read_lines("data/day3.txt");
+    println!("======== Day 3 ========");
+    println!("Part 1: {}", day3::count_trees_knight_move(&data));
+    println!("");
 }
 
 fn run_day2() {
     let data = read_lines("data/day2.txt");
-    println!("======== Day2 ========");
+    println!("======== Day 2 ========");
     println!("Part 1: {}", day2::count_sled_passwords(&data));
     println!("Part 2: {}", day2::count_toboggan_passwords(&data));
     println!("");
@@ -19,7 +27,7 @@ fn run_day2() {
 
 fn run_day1() {
     let data = read_int_data("data/day1.txt");
-    println!("======== Day1 ========");
+    println!("======== Day 1 ========");
     println!("Part 1: {}", day1::find_product(&data).expect("must work"));
     println!("Part 2: {}", day1::find_product_triplet(&data).expect("must work"));
     println!("");
