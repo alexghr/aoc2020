@@ -8,13 +8,14 @@ fn main() {
     run_day1();
     run_day2();
     run_day3();
+    run_day4();
 }
 
-fn run_day3() {
-    let data = read_lines("data/day3.txt");
-    println!("======== Day 3 ========");
-    println!("Part 1: {}", day3::count_trees_knight_move(&data));
-    println!("Part 2: {}", day3::check_slopes(&data));
+fn run_day1() {
+    let data = read_lines("data/day1.txt");
+    println!("======== Day 1 ========");
+    println!("Part 1: {}", day1::find_product(&data));
+    println!("Part 2: {}", day1::find_product_triplet(&data));
     println!("");
 }
 
@@ -26,19 +27,20 @@ fn run_day2() {
     println!("");
 }
 
-fn run_day1() {
-    let data = read_int_data("data/day1.txt");
-    println!("======== Day 1 ========");
-    println!("Part 1: {}", day1::find_product(&data).expect("must work"));
-    println!("Part 2: {}", day1::find_product_triplet(&data).expect("must work"));
+fn run_day3() {
+    let data = read_lines("data/day3.txt");
+    println!("======== Day 3 ========");
+    println!("Part 1: {}", day3::count_trees_knight_move(&data));
+    println!("Part 2: {}", day3::check_slopes(&data));
     println!("");
 }
 
-fn read_int_data(filename: &str) -> Vec<i32> {
-    read_lines(&filename)
-        .iter()
-        .map(|val| val.parse().unwrap())
-        .collect()
+fn run_day4() {
+    let data = read_lines("data/day4.txt");
+    println!("======== Day 4 ========");
+    println!("Part 1: {:?}", day4::count_valid_passports(&data));
+    println!("Part 2: {}", "not implemented");
+    println!("");
 }
 
 fn read_lines(filename: &str) -> Vec<String> {
