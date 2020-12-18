@@ -38,8 +38,8 @@ fn run_day3() {
 fn run_day4() {
     let data = read_lines("data/day4.txt");
     println!("======== Day 4 ========");
-    println!("Part 1: {:?}", day4::count_valid_passports(&data));
-    println!("Part 2: {}", "not implemented");
+    println!("Part 1: {}", day4::count_valid_passports_p1(&data));
+    println!("Part 2: {}", day4::count_valid_passports_p2(&data));
     println!("");
 }
 
