@@ -48,6 +48,7 @@ fn run_day5() {
     let data = read_lines("data/day5.txt");
     println!("======== Day 5 ========");
     println!("Part 1: {}", day5::find_max_seat_id(&data));
+    println!("Part 2: {}", day5::find_free_seat(&data));
     println!("");
 }
 
